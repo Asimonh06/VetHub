@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida para mascotas</title>
+    <link rel="stylesheet" href="estilos/compras.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
+            <label class="logo">VetHub</label>
+            <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#portafolio">Galeria</a></li>
+                <li><a href="compras.html">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contenedor">
+        <!-- contenedor de los elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Hill's Science Diet Adult Small Bites</span>
+                <img src="img/Comidas/comida1.jpg" alt="" class="img-item">
+                <span class="precio-item">S/99.00</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Hill's Science Diet Adult Alimento</span>
+                <img src="img/Comidas/comida2.jpg" alt="" class="img-item">
+                <span class="precio-item">S/199.00</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Hills Pd Z/D Ultra Sensibilidades De Piel</span>
+                <img src="img/Comidas/comida3.jpg" alt="" class="img-item">
+                <span class="precio-item">S/38.00</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Combo Barker Sabor a Salmón</span>
+                <img src="img/Comidas/comida4.jpg" alt="" class="img-item">
+                <span class="precio-item">S/38.00</span>    
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Dogxtreme Adulto Cordero Alimento</span>
+                <img src="img/Comidas/comida5.jpg" alt="" class="img-item">
+                <span class="precio-item">S/38.00</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Canbo Cuidado De Esterilizados</span>
+                <img src="img/Comidas/comida6.jpg" alt="" class="img-item">
+                <span class="precio-item">S/35.00</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Canbo Cuidado Del Tracto Urinario</span>
+                <img src="img/Comidas/comida7.jpg" alt="" class="img-item">
+                <span class="precio-item">S/36.00</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Churu Sabor Pollo con Camarón 60Gr</span>
+                <img src="img/Comidas/comida8.jpg" alt="" class="img-item">
+                <span class="precio-item">S/12.90</span>
+                <button class="boton-item">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- carrito de compras -->
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Tu carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!--  
+                <div class="carrito-item">
+                    <img src="img/Comidas/comida8.jpg" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Comida 8</span>
+                        <div class="selector-cantidad">
+                            <i class='bx bx-minus restar-cantidad' ></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class='bx bx-plus sumar-cantidad' ></i>
+                        </div>
+                        <span class="carrito-item-precio">S/. 99</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class='bx bxs-trash-alt' ></i>
+                    </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/Comidas/comida7.jpg" alt="" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Comida 7</span>
+                        <div class="selector-cantidad">
+                            <i class='bx bx-minus restar-cantidad' ></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class='bx bx-plus sumar-cantidad' ></i>
+                        </div>
+                        <span class="carrito-item-precio">S/. 199</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class='bx bxs-trash-alt' ></i>
+                    </span>
+                </div>
+                -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Total:</strong>
+                    <span class="carrito-precio-total"></span>
+                </div>
+                <button class="btn-pagar" onclick="pagarClicked()">Pagar<i class='bx bxs-shopping-bag'></i></button>
+            </div>
+        </div>
+    </section>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">VetHub</h2>
+                <p>Somos expertos en el cuidado y tratamiento de tu mascota.</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
